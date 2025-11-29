@@ -19,6 +19,7 @@
   --container-width: 1200px;
   --border-radius: 6px;
 }
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
