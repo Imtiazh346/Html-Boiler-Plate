@@ -1,0 +1,38 @@
+/* 
+  Apply border-box globally so width/height include padding & border.
+  Makes layouts easier and prevents unexpected size overflow.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*Remove default margin & padding from all elements.*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Suggestion: Keeps link color consistent with text */
+}
+
+/* 
+  Make all media responsive by default and display: block removes inline spacing issues.
+*/
+img, picture, svg, video {
+    max-width: 100%;
+    display: block;
+    height: auto; 
+}
+
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5; /* Improves readability */
+}
